@@ -29,3 +29,11 @@ export const crearCliente = (c) => request("/api/clientes", { method: "POST", bo
 export const actualizarCliente = (id, c) =>
   request(`/api/clientes/${id}`, { method: "PUT", body: JSON.stringify({ id, ...c }) });
 export const eliminarCliente = (id) => request(`/api/clientes/${id}`, { method: "DELETE" });
+
+// Genéricas para las demás entidades: recurso = "motocicletas" | "reparaciones" | "repuestos"
+export const listar = (recurso) => request(`/api/${recurso}`);
+export const obtener = (recurso, id) => request(`/api/${recurso}/${id}`);
+export const crear = (recurso, d) => request(`/api/${recurso}`, { method: "POST", body: JSON.stringify(d) });
+export const actualizar = (recurso, id, d) =>
+  request(`/api/${recurso}/${id}`, { method: "PUT", body: JSON.stringify({ id, ...d }) });
+export const eliminar = (recurso, id) => request(`/api/${recurso}/${id}`, { method: "DELETE" });

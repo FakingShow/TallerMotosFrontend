@@ -1,0 +1,7 @@
+/* Solo la barra de pestañas; usa las variables de styles.css */
+.tabs { background: var(--panel); border-bottom: 1px solid var(--linea);
+  display: flex; gap: .25rem; padding: 0 1rem; overflow-x: auto; }
+.tabs button.tab { background: transparent; color: var(--suave); border-radius: 0;
+  border-bottom: 3px solid transparent; padding: .8rem 1rem; white-space: nowrap; }
+.tabs button.tab:hover { color: var(--tinta); }
+.tabs button.tab[aria-current="page"] { color: var(--tinta); border-bottom-color: var(--amarillo); }
