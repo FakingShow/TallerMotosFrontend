@@ -11,8 +11,8 @@ Entidad administrada: **Clientes** (`/api/clientes`).
 > Requisito: la API debe tener CORS habilitado (ver `CORS_PATCH_API.md`).
 
 ## Credenciales de prueba
-Usuario `admin` / contraseña `admin123` (usuario sembrado en el código de la API;
-verifíquelo contra la API publicada antes de entregar).
+Usuario `admin` / contraseña `admin123` 
+.
 
 ## Endpoints usados
 | Función | Método y ruta |
